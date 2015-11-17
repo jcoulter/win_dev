@@ -1,0 +1,9 @@
+*~
+.loadpath
+.externalToolBuilders
+pkg/
+.idea/
+.yardoc/
+doc/
+
+Gemfile.lock

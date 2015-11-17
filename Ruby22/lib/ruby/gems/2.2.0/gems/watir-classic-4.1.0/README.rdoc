@@ -1,0 +1,79 @@
+= Watir Classic
+
+Watir Classic is a Watir[https://github.com/watir/watir] driver for automating Internet Explorer on Windows.
+
+Project Home:: http://watir.com
+Documentation:: http://rubydoc.info/github/watir/watir-classic/frames
+Source Code:: http://github.com/watir/watir-classic
+Support:: http://watir.com/support
+Gem:: https://rubygems.org/gems/watir-classic
+
+== Install
+
+Install the gem:
+
+  gem install watir-classic
+
+Detailed installation instructions are at http://watir.com/installation
+
+== Examples
+
+Some examples from http://watir.com/examples
+
+Loading Watir gem to drive Internet Explorer on Windows
+
+  require 'watir-classic'
+
+Starting a new browser & going to our site
+
+  browser = Watir::Browser.new
+  browser.goto("http://bit.ly/watir-example")
+
+Setting a text field
+
+  browser.text_field(:name => "entry.0.single").set "Watir"
+
+Setting a multi-line text box
+
+  browser.text_field(:name => "entry.1.single").set "I come here from Australia. \n The weather is great here."
+
+Setting and clearing a radio button
+
+  browser.radio(:value => "Watir").set
+  browser.radio(:value => "Watir").clear
+
+Setting and clearing check boxes
+
+  browser.checkbox(:value => "Ruby").set
+  browser.checkbox(:value => "Python").set
+  browser.checkbox(:value => "Python").clear
+
+Clicking a button
+
+  browser.button(:name => "logon").click
+
+Clearing, getting and selecting selection list values
+
+  browser.select_list(:name => "entry.6.single").clear
+  puts browser.select_list(:name => "entry.6.single").options.map(&:text)
+  browser.select_list(:name => "entry.6.single").select "Chrome"
+
+Clicking a button
+
+  browser.button(:name => "submit").click
+
+Checking for text in a page
+
+  puts browser.text.include?("Your response has been recorded.")
+
+Checking the title of a page
+
+  puts browser.title == "Thanks!"
+
+== Supported Platforms
+
+Watir-Classic is supported on Ruby 1.8.7, 1.9.3 and 2.0.0. It should work on Internet Explorer 8, 9 and 10.
+
+Let us know at {Watir's Mailing List}[https://groups.google.com/forum/?fromgroups#!forum/watir-general] or
+through {Issues}[https://github.com/watir-classic-issues] if there's any problems.
+

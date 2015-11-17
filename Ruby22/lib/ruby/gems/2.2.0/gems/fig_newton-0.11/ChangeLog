@@ -1,0 +1,44 @@
+=== Version 0.11 / 2014-12-19
+* Added require for socket in order to elminate possible error (Thanks Doug Morgan)
+
+=== Version 0.10 / 2014-6-1
+* Enhancements
+  * Can now include ERB in yml file due to changes in yml_reader
+
+=== Version 0.9 / 2013-3-2
+* Enhancements
+  * Fixed so no longer reading file when using default
+  * Removed some print statements
+
+=== Version 0.8 / 2013-3-28
+* Enhancements
+  * Added ability to provide default values for any element (Thanks Peter Hartman)
+
+=== Version 0.7 / 2013-1-1
+* Enhancements
+  * Added a to_hash method to Node
+  * Added check to see if yml file named after hostname exists.
+
+=== Version 0.6 / 2012-11-14
+* Fixes
+  * Fixed a problem where it would not return an integer (Thanks Steve Jackson)
+
+=== Version 0.5 / 2012-7-29
+* Fixes
+  * Fixed problem when using FIG_NEWTON_FILE without first calling load
+
+=== Version 0.4 / 2012-6-9
+* Fixes
+  * Updated yml_reader dependency to fix issue with using default directory
+  * Made change to the way files are read - default directory and file work properly now.
+
+=== Version 0.3 / 2012-5-22
+* Enhancements
+  * Added support for reading filename from environment variable FIG_NEWTON_FILE
+
+=== Version 0.2 / 2012-5-16
+* Enhancements
+  * Added support for nested hashes
+
+=== Version 0.1 / 2012-5-3
+* Initial Release

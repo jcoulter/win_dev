@@ -1,0 +1,59 @@
+=== Version 0.6.5 / 2015-6-3
+* Enhancements
+  * Added ability to set soap version
+
+=== Version 0.6.4 / 2015-4-22
+* Enhancements
+  * SSL version is :SSLv3 by default
+  * Added ability to set SSL version.
+
+=== Version 0.6.3 / 2015-3-26
+* Enhancements
+  * Added ability to disable ssl verification 
+
+=== Version 0.6.2 / 2015-3-12
+* Enhancements
+  * Calling xpath on Savon response, to take advantage of namespace collecting from response.
+
+=== Version 0.6.1 / 2015-3-12
+* Enhancements
+  * Added xpath method to return to allow user to access path directly
+
+=== Version 0.6 / 2014-12-22
+* Enhancements
+  * Added ability to call operation with hand rolled xml
+  * Disabled logging by default, setting log_level enables it
+
+=== Version 0.5.1 / 2013-6-1
+* Enhancements
+  * Added body method to return the body of the result as a Hash
+
+=== Version 0.5 / 2013-6-1
+* Enhancements
+  * Removed the body accessor
+  * Removed the body_xml method
+  * Added to_xml method to return the response as a String containing the XML
+  * Added to_hash method to return the respons as a Hash
+  * Added doc method to return response as a Nokogiri::XML::Document document
+  * Updated method_missing so when services methods are called the raw XML is returned
+
+=== Version 0.4 / 2013-3-18
+* Enhancements
+  * Added body accessor to SoapObject to return raw body
+  * Added body_xml method to SoapObject to return Nokogiri::XML::Document containing body
+
+=== Version 0.3 / 2013-3-17
+* Enhancements
+  * Added SoapObject::Factory to assist in creating new service objects
+  * Added accessor for @response
+
+=== Version 0.2 / 2013-3-11
+* Enhancements
+  * Added ability to add XML to the soap header
+  * Added ability to set the encoding for the messages
+  * Added ability to use basic authentication
+  * Added ability to use digest authentication
+  * Added ability to set the log level
+
+=== Version 0.1 / 2013-3-4
+Initial release

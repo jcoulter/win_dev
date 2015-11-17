@@ -1,0 +1,6 @@
+<%
+std_opts = "--no-source --color --format pretty"
+%>
+
+default: <%= std_opts %> 
+focus: <%= std_opts %> --tags @focus
